@@ -11,7 +11,7 @@ int main(int argc, char *argv[]){
 
     if(pipe(fd) < 0) exit(1);
     if(fork() == 0){
-        char* szoveg = "Ferencsik Mark";
+        char* szoveg = "Horvath Akos";
         write(fd, szoveg, 16);
     }
     else{
